@@ -34,7 +34,7 @@ module parallel_parameters_module
         integer, dimension(:),pointer, public :: j_virt  
         integer, dimension(:),pointer, public :: k_virt  
 
-        integer, public :: nthreads = 12
+        integer, public :: nthreads = 8
 
         integer, public               :: my_id      
         integer, public               :: my_rank      
