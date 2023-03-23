@@ -578,7 +578,6 @@ contains
         call this%total_pressure%Exchange_virtual_space_nonblocking()
         call this%total_density%Apply_boundary(.false.)
             
-        ! !$omp parallel do simd collapse(3) num_threads(this%parallel_params%nthreads)
         do k = 1, this%nz
             do j = 1, this%ny
                 do i = 1, this%nx
